@@ -1,0 +1,3 @@
+PayBill Transaction of amount $100.00 to BANK's gambling account on 03/30/1999
+PayBill Transaction of amount $20.46 to BANK's interest account on 03/31/1999
+PayBill Transaction of amount $500.00 to U of T on 04/01/1999
