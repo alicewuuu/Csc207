@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.guiuser.PayBillController">
+   <children>
+      <Circle fill="#ffe3e3" layoutX="125.0" layoutY="145.0" opacity="0.35" radius="203.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#e6d0ff" layoutX="361.0" layoutY="260.0" opacity="0.31" radius="100.0" stroke="#e6d0ff" strokeType="INSIDE" />
+      <BorderPane layoutX="-2.0" layoutY="-2.0" prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="-2.0">
+         <top>
+            <Label prefHeight="105.0" prefWidth="597.0" text="     Pay Bill Transaction" BorderPane.alignment="CENTER_LEFT">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+            </Label>
+         </top>
+         <left>
+            <HBox alignment="CENTER" prefHeight="310.0" prefWidth="321.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+               <children>
+                  <VBox prefHeight="324.0" prefWidth="271.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="271.0" text="From:">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font></Label>
+                        <ComboBox fx:id="PayBillAccountBox" onAction="#enableContinue" prefHeight="31.0" prefWidth="268.0" promptText="Select Account">
+                           <opaqueInsets>
+                              <Insets bottom="10.0" top="10.0" />
+                           </opaqueInsets></ComboBox>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="271.0" text="To:">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="payee" prefHeight="31.0" prefWidth="200.0" promptText="Enter Payee">
+                           <opaqueInsets>
+                              <Insets bottom="10.0" top="10.0" />
+                           </opaqueInsets></TextField>
+                        <Label layoutX="10.0" layoutY="73.0" prefHeight="36.0" prefWidth="271.0" text="Amount:">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="payBillAmount" layoutX="10.0" layoutY="153.0" prefHeight="31.0" prefWidth="200.0" promptText="Enter Amount" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </left>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="158.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="continueButton" alignment="CENTER" mnemonicParsing="false" onAction="#continueButton" prefHeight="70.0" prefWidth="130.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="Continue">
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="65.0" right="65.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelButton" alignment="CENTER" layoutX="18.0" layoutY="18.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="70.0" prefWidth="130.0" style="-fx-background-color: lightgrey; -fx-background-radius: 15;" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="65.0" right="65.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <center>
+
+         </center>
+         <right>
+
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

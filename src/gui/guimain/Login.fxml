@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.guimain.LoginController">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#ffe3e3" layoutX="125.0" layoutY="145.0" opacity="0.35" radius="203.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#e6d0ff" layoutX="361.0" layoutY="260.0" opacity="0.31" radius="100.0" stroke="WHITE" strokeType="INSIDE" />
+            <TextField fx:id="Username" layoutX="196.0" layoutY="146.0" prefHeight="44.0" prefWidth="223.0" promptText="Username" />
+            <PasswordField fx:id="Password" layoutX="195.0" layoutY="209.0" prefHeight="48.0" prefWidth="223.0" promptText="Password" />
+            <Button id="Bank_Manager" layoutX="136.0" layoutY="428.0" mnemonicParsing="false" onAction="#setBankManagerScene" prefHeight="40.0" prefWidth="348.0" style="-fx-background-radius: 15; -fx-background-color: lightsteelblue;" text="Bank Manager">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button id="Existing_User" layoutX="136.0" layoutY="328.0" mnemonicParsing="false" onAction="#setExistingUser" prefHeight="40.0" prefWidth="351.0" style="-fx-background-radius: 15; -fx-background-color: lightsteelblue;" text="Existing User">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button id="New_User" layoutX="135.0" layoutY="277.0" mnemonicParsing="false" onAction="#changeRegisterScene" prefHeight="40.0" prefWidth="353.0" style="-fx-background-radius: 15; -fx-background-color: lightsteelblue;" text="New User">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Label id="Bank_Machine" layoutX="192.0" layoutY="72.0" text="Bank Machine">
+               <font>
+                  <Font name="Times New Roman Bold" size="48.0" />
+               </font></Label>
+            <Button id="cd" layoutX="366.0" layoutY="27.0" mnemonicParsing="false" onAction="#setCheckDate" style="-fx-background-color: lightgrey; -fx-background-radius: 59;" text="CheckDate">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Label fx:id="date" layoutX="497.0" layoutY="33.0" text="00000000">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Label>
+            <Button id="Employee" layoutX="135.0" layoutY="378.0" mnemonicParsing="false" onAction="#setEmployeeScene" prefHeight="40.0" prefWidth="352.0" style="-fx-background-radius: 15; -fx-background-color: lightsteelblue;" text="Employee">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Label layoutX="45.0" layoutY="260.0" prefHeight="40.0" prefWidth="201.0" text="Enter as:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="53.0" layoutX="131.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/piggy-bank.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

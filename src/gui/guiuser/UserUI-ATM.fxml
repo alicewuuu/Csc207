@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.guiuser.UserController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Circle fill="#ffe3e3" layoutX="125.0" layoutY="145.0" opacity="0.35" radius="203.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#e6d0ff" layoutX="361.0" layoutY="260.0" opacity="0.31" radius="100.0" stroke="#e6d0ff" strokeType="INSIDE" />
+            <Label fx:id="greeting" alignment="CENTER" layoutX="73.0" layoutY="25.0" style="&#10;" text="Welcome, Doge!" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font name="Times New Roman" size="36.0" />
+               </font>
+            </Label>
+            <ListView fx:id="accountList" layoutX="211.0" layoutY="194.0" prefHeight="244.0" prefWidth="353.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: lightsteelblue; -fx-border-width: 2;" />
+            <Button fx:id="transfer" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="89.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setTransferScene" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="TRANSFER ">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button fx:id="deposit" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="210.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setDepositScene" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="DEPOSIT     ">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="payBill" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="151.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setPayBillScene" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="PAY BILL   ">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="withdraw" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="268.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setWithdrawScene" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="WITHDRAW">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetPassword" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="331.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setPasswordScene" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="PASSWORD">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="gamble" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="393.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setGambleScene" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="HAVE FUN!">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="addAccount" layoutX="385.0" layoutY="141.0" mnemonicParsing="false" onAction="#setNewAccount" prefHeight="32.0" prefWidth="184.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="    Add New Account">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button fx:id="logout" layoutX="467.0" layoutY="36.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setLogoutScene" prefHeight="30.0" prefWidth="87.0" style="-fx-background-radius: 30; -fx-background-color: lightsteelblue;" text="LOG OUT">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="jointUser" layoutX="385.0" layoutY="93.0" mnemonicParsing="false" onAction="#setJointUser" prefHeight="32.0" prefWidth="184.0" style="-fx-background-color: lightsteelblue; -fx-background-radius: 15;" text="    Add Joint User    ">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Label fx:id="balance" layoutX="211.0" layoutY="89.0" prefHeight="86.0" prefWidth="163.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: lightsteelblue; -fx-border-width: 2;">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font></Label>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="386.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/addthis-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="386.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/addthis-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="32.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/22373-200.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="37.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/85982.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="35.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/309258-200.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="35.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/cash_out-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="36.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/change_password-reset_password-new_password-Forgot_password-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="34.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/117645-200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      
+   </children>
+</VBox>

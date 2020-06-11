@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      alignment="center" spacing="5">
+
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10" />
+    </padding>
+
+    <CheckBox fx:id="checkBox1" text="Choice 1" />
+    <CheckBox fx:id="checkBox2" text="Choice 2" />
+    <CheckBox fx:id="checkBox3" text="Choice 3" />
+    <Button fx:id="submitButton" text="Submit" />
+</VBox>
